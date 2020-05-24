@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  width: inherit;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+ /* || SIDEBAR */ 
+.topnav {
+    float: left;
+    height: 10%;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    background: #4e7972;
+}
+
+.topnav a {
+    float: left;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    color: #c3ceca;
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 1.6vw;
+    font-size: 2.5vw;
+  }
+  
+  .topnav a:hover {
+    color: 	#8dbaa0;
+    font-weight: 600;
+  }
+
+  .current-menu-item {
+    background:rgba(28,44,42,0.5);
+    height: 100%;
+  }
+
+   /* || MAIN CONTENT */ 
+ .content {
+   padding-top: 1vw;
+ }
+
+ #about {
+  background: #F3F8F5;
+  height: 100vh;
+}
+
+  #about img {
+    float: left;
+    width: 49vw;
+    margin-left: 1.5%;
+    margin-top: 5%;
+  }
+
+  #about p {
+    display: inline-block;
+    margin-top: 40vh;
+    text-align: center;
+    font-size: 1.7vw;
+    font-family: Montserrat;
+    font-weight: 300;
+    padding: 1.5%;
+  }
+  }
+
+  #underfixed {
+    position: absolute;
+    top: 100vh;
+  }
+  
+  #underfixed h1 {
+      font-family: Montserrat;
+      font-weight: 600;
+      color: dimgray;
+      font-size: 3.5vw;
+      margin-bottom: 10px;
+      padding-left: 1.5%;
+  }
+
+  .project {
+    opacity: 0;
+}
+
+  #previous{
+    padding-top: 10vh;
+    padding-bottom: 25vh;
+  }
+
+  #previous h2 {
+    font-family: Montserrat;
+    font-weight: 300;
+    color: #518f81;
+    font-size: 2.5vw;
+    padding-left: 1.5%;
+  }
+
+  #previous p{
+      float: left;
+      font-size: 1.3vw;
+      font-family: Montserrat;
+      display: flex;
+      align-self: center;
+  }
+
+  .description{
+    margin-left: 1.5%;
+    padding-bottom: 2%;
+    font-family: Montserrat;
+    font-size: 1.3vw;
+    text-align: left;
+  }
+
+  .button {
+    margin-left: 4%;
+  }
+ 
+ #left {
+   height: 40%;
+ } 
+
+ #left img {
+    float: left;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+  }
+
+  #right{
+    background: rgb(210, 217, 215, 0.3);
+    height: 40%;
+  }
+
+  #right img {
+    float: right;
+    padding-right: 1.5%;
+    padding-bottom: 1.5%;
+  }
+
+  #right h2 {
+    padding-top: 1.5%;
+  }
+
+  #right p {
+    padding-left: 1.5%;
+  }
+
+  #contact-me {
+    background: #E8F1EC;
+    padding-top: 0.1vh;
+  }
+  
+  #contact {
+    text-align: justify;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  } 
+
+  #contact span {
+    display: table-cell;
+    text-align: center;
+    font-family: Montserrat;
+    padding-bottom: 3%;
+  }
+
+ /* || POPUP */ 
+.popup {
+        background: rgba(100, 100, 100, 0.8);
+        position: fixed;
+        display: none;
+        z-index: 1000;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+#plantbaby {
+        position: fixed;
+        padding: 2%;
+		    background: #FFFFFF;
+		    border-radius: 10px;
+        box-shadow: 0px 0px 15px 0px rgba(#000000, 0.4);
+        width: auto;
+        height: auto;
+        left: 15%;
+        right: 15%;
+        top: 5%
+    }
+
+.popup video {
+    float: left;
+    margin: 20px;
+}
+ 
+/* || POPUP BUTTON */ 
+.outer {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    margin: auto;
+    width: 70px;
+    cursor: pointer;
+  }
+  
+  .inner {
+    width: inherit;
+    text-align: center;
+  }
+  
+  label { 
+    font-family: Montserrat;  
+    font-size: .8em; 
+    line-height: 4em;
+    text-transform: uppercase;
+    color: black;
+    transition: all .3s ease-in;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .inner:before, .inner:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: inherit;
+    background: #518f81;
+    left: 0;
+    transition: all .3s ease-in;
+  }
+  
+  .inner:before {
+    top: 50%; 
+    transform: rotate(45deg);  
+  }
+  
+  .inner:after {  
+    bottom: 50%;
+    transform: rotate(-45deg);  
+  }
+  
+  .outer:hover label {
+    opacity: 1;
+  }
+  
+  .outer:hover .inner:before,
+  .outer:hover .inner:after {
+    transform: rotate(0);
+  }
+  
+  .outer:hover .inner:before {
+    top: 0;
+  }
+  
+  .outer:hover .inner:after {
+    bottom: 0;
+  }
+
+/* || BUTTON */
+.button {
+  --offset: 10px;
+  --border-size: 2px;
+  display: block;
+  position: relative;
+  padding: 1.5em 3em;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: #518f81;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+
+}
+.button:hover {
+  background: rgba(100, 0, 0, .03);
+}
+.button__horizontal, .button__vertical {
+  position: absolute;
+  top: var(--horizontal-offset, 0);
+  right: var(--vertical-offset, 0);
+  bottom: var(--horizontal-offset, 0);
+  left: var(--vertical-offset, 0);
+  transition: transform 0.8s ease;
+  will-change: transform;
+}
+.button__horizontal::before, .button__vertical::before {
+  content: '';
+  position: absolute;
+  border: inherit;
+}
+.button__horizontal {
+  --vertical-offset: calc(var(--offset) * -1);
+  border-top: var(--border-size) solid currentcolor;
+  border-bottom: var(--border-size) solid currentcolor;
+}
+.button__horizontal::before {
+  top: calc(var(--vertical-offset) - var(--border-size));
+  bottom: calc(var(--vertical-offset) - var(--border-size));
+  left: calc(var(--vertical-offset) * -1);
+  right: calc(var(--vertical-offset) * -1);
+}
+.button:hover .button__horizontal {
+  transform: scaleX(0);
+}
+.button__vertical {
+  --horizontal-offset: calc(var(--offset) * -1);
+  border-left: var(--border-size) solid currentcolor;
+  border-right: var(--border-size) solid currentcolor;
+}
+.button__vertical::before {
+  top: calc(var(--horizontal-offset) * -1);
+  bottom: calc(var(--horizontal-offset) * -1);
+  left: calc(var(--horizontal-offset) - var(--border-size));
+  right: calc(var(--horizontal-offset) - var(--border-size));
+}
+.button:hover .button__vertical {
+  transform: scaleY(0);
+}
+
