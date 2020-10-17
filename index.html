@@ -1,66 +1,112 @@
 <!doctype html>
 <html>
-<link rel="stylesheet" href="style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="scroll.js"></script>
-<script src="popup.js"></script>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scroll.js"></script>
+    <script src="popup.js"></script>
     <title>Adelina Andersen</title>
 </head>
 
 <body id="body">
     <div class="topnav">
-        <a class="menu-item-1" href="#about">About me</a>
-        <a class="menu-item-2" href="#previous" class="menu-item-2">Previous work</a>
-        <a class="menu-item-3" href="#contact">Contact</a>
+        <a class="menu-item-1 col-s-4 col-2" href="#welcome">About me</a>
+        <a class="menu-item-2 col-s-5 col-3" href="#previous" class="menu-item-2">Previous work</a>
+        <a class="menu-item-3 col-s-3 col-2" href="#contact">Contact</a>
     </div>
 
     <div class="content">
-        <div id="about">
-            <section>
-                <img src="startsida.png">
-                <p>Master student in Interactive Media Technology <br>
-                    at KTH Royal Insitute of Technology.</p>
-            </section>
+        <div class="about">
+            <div id="welcome">
+            <div class="row">
+                <div class="col-6 col-s-12">
+                    <img id="hello_image" src="startsida.png">
+                </div>
+                <div class="col-6 col-s-12">
+                    <p id="about_text">Master student in Interactive Media Technology
+                        at KTH Royal Insitute of Technology.</p>
+                </div>
+            </div>
+            </div>
+            <div id="about">
+                <div class="row">
+                    <div class="col-s-12">
+                        <img id="portrait" src="portrait.jpg">
+                        <div id="img-wrapper">
+                        </div>
+                    </div>
 
-            <script type="text/javascript">
-                var background = document.getElementById('about')
-                window.addEventListener('scroll', function () {
-                    background.style.opacity = 1 - +window.pageYOffset / 550 + ''
-                    background.style.top = +window.pageYOffset + 'px'
-                })
-            </script>
+                    <div class="col-s-12 col-6">
+                        <p id="more_info_text">Currently studying my final year of the Media Technology programme at KTH with a focus on interactive media technology.
+                            I am especially interested in the user experience and design of interactive and multimodal experiences. 
+                             </p>
+                        <p id="scroll_down_text"><strong>Scroll down to see prevous work</strong></p>
+                        <a href="#previous">
+                            <img id="arrow" src="arrow.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="underfixed">
             <section id="previous">
                 <h1>Previous work</h1>
-
-                <div class="project" id="left">
-                    <h2>Plant Baby</h2>
-                    <img src="plantbaby.jpg" width="40%" height="10%">
-                    <div class="description">Project about plants osv...</div>
-                    <button data-js="open" class="button">See more
-                        <div class="button__horizontal"></div>
-                        <div class="button__vertical"></div>
-                    </button>
+                <div class="project1">
+                    <div class="row">
+                        <div class="col-5 col-s-10" id="left">
+                            <h2>Plant Baby</h2>
+                            <img src="plantbaby.png" width="60%" height="60%">
+                            <div class="description">Prototype for an application that helps you monitor and take care of your plants.</div>
+                            <button id="project1" class="grow">
+                                <img src="button.png" width="110vw" height="40vw">
+                            </button>
+                            <br style="clear: both;">
+                        </div>
+                    </div>
                 </div>
-                <br style="clear: both;">
 
-                <div class="popup">
-                    <div id="plantbaby">
+                <div class="project2">
+                    <div class="row">
+                        <div class="col-5 col-s-10" id="right">
+                            <h2>Thunderball</h2>
+                            <img src="thunderball.png" width="60%">
+                            <div class="description">A weather forecast visualization service created with the aim to help the energy sector with predictions about the weather.</div>
+                            <button id="project2">
+                                <img src="button.png" width="110vw" height="40vw">
+                            </button>
+                            <br style="clear: both;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project3">
+                    <div class="row">
+                        <div class="col-5 col-s-10" id="left">
+                            <h2>SolAR</h2>
+                            <img src="solar2.png" width="50%" height=10%>
+                            <div class="description">AR application created as a tool for teaching middle school children about the solar system.</div>
+                            <button id="project3">
+                                    <img src="button.png" width="110vw" height="40vw">
+                            <br style="clear: both;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup1">
+                    <div id="popup-window">
                         <h2>Plant Baby</h2>
-                        <video width="426" height="240" controls>
+                        <p>Plant Baby is a concept and prototype created in the course Media Technology and Interaction Design. 
+                            The concept of Plant Baby includes sensors that measure plant's well-being and then informs the user of what needs to be done though an app. 
+                        </p>
+                            <p>More information can be seen in the video below and the design process can be found in 
+                                <a href="https://drive.google.com/file/d/1hzuTX9TKihgdmyxafN6-RswpQfahq9WG/view?usp=sharing">this workbook.</a>
+                            </p>
+                        <video width="80%" poster="plantbaby.png" controls>
                             <source src="plantbaby.mov" type="video/mp4">
                         </video>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipiscing elit lacinia mus, sapien nibh imperdiet
-                            tempus. Vitae
-                            massa semper mi sagittis a cum cursus fusce per, gravida tellus metus purus litora nam
-                            ultricies donec,
-                            nibh
-                            dis ligula ad facilisi penatibus condimentum aenean.</p>
-
                         <div class="outer">
                             <div class="inner" name="close">
                                 <label>Close</label>
@@ -69,27 +115,47 @@
                     </div>
                 </div>
 
-                <div class="project" id="right">
-                    <h2>SolAR</h2>
-                    <img src="solar.png" width="40%" height=10%>
-                    <div class="description">Project about planets osv...</div>
-                    <button data-js="open" class="button">See more
-                        <div class="button__horizontal"></div>
-                        <div class="button__vertical"></div>
-                    </button>
-                    <br style="clear: both;">
+                <div class="popup2">
+                    <div id="popup-window">
+                        <h2>Project Thunderball</h2>
+                        <p>Project Thunderball is a project created in the course Information Visualization and was done in collaboration with Greenlytics and their weather forecast API.
+                            Thunderball allows the user to see temperature and wind speed at different times of the day, as predicted by different weather forecasts. Built with React, D3, and MapBox.
+                        </p>
+                           
+                        <p>More information can be found 
+                            <a href="https://moawinberg.github.io/thunderball-pages/"> on this website</a> and in the video below.</p>
+
+                        <video  poster="thunderball.png" width="80%" controls>
+                            <source src="thunderball.mp4">
+                        </video>
+                        <div class="outer">
+                            <div class="inner" name="close">
+                                <label>Close</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="project" id="left">
-                    <h2>BPM Runner</h2>
-                    <img src="bpmr.jpg" width="40%" height=10%>
-                    <div class="description">Project about running osv...</div>
-                    <button data-js="open" class="button">See more
-                        <div class="button__horizontal"></div>
-                        <div class="button__vertical"></div>
-                    </button>
-                    <br style="clear: both;">
+                <div class="popup3">
+                    <div id="popup-window">
+                        <h2>solAR</h2>
+                        <p>solAR is a project created in the course Multimodal interaction and interfaces. It is an application that features the solar system in augmented reality (AR)
+                             as well as an informational audio track for a complementary use of multiple output modalities. 
+                             The main aim of the project was to create a tool for teaching middle school children about the solar system. 
+                             The application was bult in Unity with Vuforia engine.</p>
+                            
+                            <p> More information can be seen in the video below. </p>
+                        <video width="80%" poster="solar2.png" controls>
+                            <source src="solAR.mov" type="video/mp4" >
+                        </video>
+                        <div class="outer">
+                            <div class="inner" name="close">
+                                <label>Close</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </section>
 
             <div id="contact-me">
@@ -98,18 +164,19 @@
                     <span>
                         <div class="icon">
                             <img src="email.png">
-                            <div class="contact">
-                                adelina.andersen@gmail.com
-                            </div>
+                            <p>
+                                adelina.andersen <br>
+                                @gmail.com
+                            </p>
                         </div>
                     </span>
 
                     <span>
                         <div class="icon">
                             <img src="telephone.png">
-                            <div class="contact">
-                                0761656862
-                            </div>
+                            <p>
+                                0761-65 68 62
+                            </p>
                         </div>
                     </span>
 
@@ -117,17 +184,16 @@
                         <div class="icon">
                             <a href="https://www.linkedin.com/in/adelina-andersen-b80633128/">
                                 <img src="linkedin.png">
-                            </a>
-                            <div class="contact">
+                            
+                            <p>
                                 Adelina Andersen
-                            </div>
+                            </p>
+                        </a>
                         </div>
                     </span>
                 </section>
             </div>
         </div>
-    </div>
-    </div>
     </div>
 </body>
 

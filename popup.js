@@ -1,12 +1,7 @@
 function popupOpenClose(popup) {
 	
-	/* Add div inside popup for layout if one doesn't exist */
-	if ($(".wrapper").length == 0){
-		$(popup).wrapInner("<div class='wrapper'></div>");
-	}
-	
 	/* Open popup */
-	$(popup).show();
+	$(popup).fadeIn(250);
 
 	/* Close popup if user clicks on background */
 	$(popup).click(function(e) {
@@ -22,12 +17,25 @@ function popupOpenClose(popup) {
 		if ($(".formElementError").is(':visible')) {
 			$(".formElementError").remove();
 		}
-		$(popup).hide();
+		$(popup).fadeOut();
 	});
 }
 
 $(document).ready(function () {
-	$("[data-js=open]").on("click", function() {
-		popupOpenClose($(".popup"));
+	$("#project1").on("click", function() {
+		popupOpenClose($(".popup1"));
 	});
 });
+
+$(document).ready(function () {
+	$("#project2").on("click", function() {
+		popupOpenClose($(".popup2"));
+	});
+});
+
+$(document).ready(function () {
+	$("#project3").on("click", function() {
+		popupOpenClose($(".popup3"));
+	});
+});
+
