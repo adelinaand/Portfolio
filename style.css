@@ -191,22 +191,11 @@ body {
       align-self: center;
   }
 
-  #project-image {
+  #previous img {
     margin-left: 20%;
   }
 
 
-  .button{
-    width: 15vh;
-    height: auto;
-    margin-left: 35%;
-  }
-
-
-  .button:hover {
-    transform: scale(1.1);
-  }
-  
   .description{
     margin-left: 1.5%;
     padding-bottom: 2%;
@@ -274,6 +263,20 @@ body {
     height: 15%;
   }
 
+  /* || BUTTON */
+  button{
+    border: none;
+    background: none;
+    outline:none;
+    margin-left: 15%;
+    margin-right: 25%;
+  }
+
+
+  button:hover {
+    transform: scale(1.1);
+  }
+  
 
   /* || POPUP */ 
   .popup1 {
