@@ -358,8 +358,8 @@ body {
 
   label { 
   font-family: Montserrat;  
-  font-size: .8em; 
-  line-height: 4em;
+  font-size: 2vh; 
+  line-height: 3em;
   text-transform: uppercase;
   color: black;
   transition: all .3s ease-in;
