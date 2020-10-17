@@ -191,10 +191,22 @@ body {
       align-self: center;
   }
 
-  #previous img {
+  #project-image {
     margin-left: 20%;
   }
 
+
+  .button{
+    width: 15vh;
+    height: auto;
+    margin-left: 35%;
+  }
+
+
+  .button:hover {
+    transform: scale(1.1);
+  }
+  
   .description{
     margin-left: 1.5%;
     padding-bottom: 2%;
@@ -262,31 +274,6 @@ body {
     height: 15%;
   }
 
-  /* || BUTTON */
-  button{
-    border: none;
-    background: none;
-    outline:none;
-    margin-left: 35%;
-  }
-
-
-  button:hover {
-    transform: scale(1.1);
-  }
-  
-
-  .button p {
-    position: relative;
-    font-family: Montserrat;
-    color: black;
-    font-weight: 300;
-    text-align: left;
-    z-index: 1;
-    border-radius: 50%/25%;
-    margin-left: -20%;
-    font-size: 10vw;
-  }
 
   /* || POPUP */ 
   .popup1 {
