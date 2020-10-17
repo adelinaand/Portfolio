@@ -76,7 +76,7 @@ body {
     float: left;
     padding-left: 3%;
     margin-top: 12%;
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
 
@@ -256,6 +256,10 @@ body {
   .icon a {
     color: black;
     text-decoration: none;
+  }
+
+  .icon img {
+    height: 15%;
   }
 
   /* || BUTTON */
