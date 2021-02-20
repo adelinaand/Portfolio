@@ -14,7 +14,6 @@ html {
   float: left;
 }
 
-
 .row::after {
   content: "";
   clear: both;
@@ -29,13 +28,23 @@ body {
   padding: 0;
 }
 
- /* || TOPNAV */ 
+img {
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/* TOPNAV
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .topnav {
     float: left;
     width: 100vw;
     top: 0;
     position: fixed;
-    z-index: 2;
+    z-index: 10;
     background: #4e7972;
 }
 
@@ -61,8 +70,8 @@ body {
     height: 100%;
   }
 
-   /* || MAIN CONTENT */ 
-
+/* WELCOME/ABOUT PAGE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
  .about {
   background: linear-gradient(#E8F1EC, white);
@@ -116,7 +125,7 @@ body {
     margin-top: 20vw;
     }
 
-    .about p {
+  .about p {
       font-family: Montserrat;
       font-weight: 300;
       font-size: 3vh;
@@ -124,7 +133,7 @@ body {
       margin-right: 2.5vw;
     }
 
-    #scroll_down_text{
+  #scroll_down_text{
       text-align: center;
     }
 
@@ -154,10 +163,25 @@ body {
     }
   }
 
+  /* PREVIOUS PROJECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
   #underfixed {
     position: absolute;
     margin-top: 3%;
   }
+
+  #previous{
+    padding-top: 20vh;
+    height: max-content;
+  }
+
+  #right {
+    float: right;
+  }
+
+  /* Texts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
   
   #underfixed h1 {
       font-family: Montserrat;
@@ -165,72 +189,306 @@ body {
       color: dimgray;
       font-size: 4vh;
       margin-bottom: 10px;
-      padding-left: 1.5%;
+      padding-left: 3%;
       padding-bottom: 5vh;
-  }
-
-  #previous{
-    padding-top: 10vh;
-    margin-bottom: 5%;
   }
 
   #previous h2 {
     text-align: center;
     font-family: Montserrat;
-    font-weight: 300;
-    color: #518f81;
+    font-weight: 900;
     font-size: 4vh;
-    padding-left: 1.5%;
   }
 
-  #previous p{
-      float: left;
-      font-size: 1.3vh;
-      font-family: Montserrat;
-      display: flex;
-      align-self: center;
-  }
-
-  #previous img {
-    margin-left: 20%;
-  }
-
-
-  .description{
-    margin-left: 1.5%;
-    padding-bottom: 2%;
+  #previous h3 {
+    text-align: center;
     font-family: Montserrat;
-    font-size: 2.3vh;
-    text-align: left;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 2.5vh;
   }
 
-  #left {
-    margin-left: 8vw;
-    margin-right: 10vw;
-    height: auto;
-    background: #D4DACA;
-    border-radius: 2.5%;
-    padding-bottom: 2.5%;
-    box-shadow: 2px 3px rgba(0, 0, 0, 0.3);
+  #description{
+    font-size: 2.8vh;
+    font-family: Montserrat;
+    display: flex;
+    text-align: justify; 
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  #right {
-    float: right;
-    margin-right: 8vw;
-    margin-left: 10vw;
-    background: #EEF0EA;
-    height: auto;
-    border-radius: 2.5%;
-    padding-bottom: 2.5%;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    box-shadow: 2px 3px rgba(0, 0, 0, 0.3);
+  #project-description {
+    margin-top: -50vh;
   }
-  .inactive_project {
-  opacity: 0.3;
-  } 
 
+  .Eye h2 {
+    color: #1551AB;
+  }
 
+  .Eye h3 {
+    color: #56BBEE;
+  }
+
+  .Eye {
+    margin-bottom: 10%;
+  }
+
+  .Peace h2 {
+      color: #586A98;
+    }
+
+  .Peace h3 {
+    color: #5C92E5;
+  }
+
+  .Thunderball h2 {
+    color: #155263;
+  }
+
+  .Thunderball h3 {
+    color: #90ACAE;
+  }
+
+  #gradient-1 {
+    height: 20vh;
+    background: linear-gradient(white, #3a709146)
+  }
+
+  #gradient-2 {
+    height: 20vh;
+    background: linear-gradient(#3a709146, white)
+  }
+
+  .Peace {
+    padding-top: 5%;
+    background: #3a709146;
+    padding-bottom: 10%;
+  }
+
+  .Thunderball {
+    margin-bottom: 30vh;
+  }
+
+  .fadeinleft {
+    opacity:0;
+}
+  
+    /* Images
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  #right-top-image {
+    position: absolute;
+    z-index: 2;
+    margin-top: 2%;
+    left: 2vw;
+    width: 50vw;
+    box-shadow: -3px -6px 3px rgba(0, 0, 0, 0.315);
+  }
+
+  #right-middle-image {
+    position: relative;
+    margin-left: 50vw;
+    width: 45vw;
+    box-shadow: -3px -6px 3px rgba(0, 0, 0, 0.315);
+  }
+
+  #right-bottom-image {
+    position: relative;
+    z-index: 3;
+    width: 80vw;
+    width: 48vw;
+    margin-left: 15%;
+    margin-top: -2vh;
+    box-shadow: -3px -6px 3px rgba(0, 0, 0, 0.315);
+  }
+
+  #left-top-image {
+    position: absolute;
+    z-index: 2;
+    margin-left: 45%;
+    width: 50vw;
+    box-shadow: -3px -6px 3px rgba(0, 0, 0, 0.315);
+  }
+
+  #left-middle-image {
+    position: relative;
+    left: 3vw;
+    margin-top: 3%;
+    z-index: 1;
+    width: 48vw;
+    box-shadow: -3px -6px 3px rgba(0, 0, 0, 0.315);
+  }
+
+  #left-bottom-image {
+    position: relative;
+    width: 45vw;
+    margin-top: -10vh;
+    z-index: 3;
+    box-shadow: -3px -6px 3px rgba(0, 0, 0, 0.315);
+    margin-left: -2vw;
+    border: 2px;
+  }
+
+  .Thunderball video{
+    position: absolute;
+    margin-top: 2%;
+    left: 2vw;
+    width: 50vw;
+    box-shadow: -3px -4px 3px rgba(0, 0, 0, 0.315);
+  }
+
+      /* BUTTON
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+button{
+  border: none;
+  background: none;
+  outline:none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+      /* POPUP WINDOW
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.popup1, 
+.popup2,
+.popup3 {
+  background: rgba(100, 100, 100, 0.8);
+  position: fixed;
+  display: none;
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+iframe {
+  right: 20vw;
+  width: 100%;
+  height: 80vh;
+  margin-top: 12vh;
+}
+
+.popup2 iframe {
+  margin-top: -2%;
+  height: 55vh;
+}
+
+#popup-window {
+  position: fixed;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 0px rgba(#000000, 0.4);
+  width: 80vw;
+  height: 92vh;
+  left: 10%;
+  right: 10%;
+  bottom: 4vh;
+}
+
+#popup-window h2 {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  font-family: Montserrat;
+  font-weight: 300;
+  color: #518f81;
+}
+
+#popup-text {
+  font-size: 2.4vh;
+  margin-top: 5vh;
+  padding: 3%;
+  font-family: Montserrat;
+}
+
+#popup-window a {
+  font-family: Montserrat;
+  font-size: 2.4vh;
+  color: #518f81;
+  text-decoration: none;
+
+}
+
+#popup-window video {
+  margin-left: 10%;
+}
+
+      /* Popup button
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.outer {
+position: absolute;
+top: 3%;
+right: 3%;
+margin: auto;
+width: 8vh;
+cursor: pointer;
+}
+
+.inner {
+width: inherit;
+text-align: center;
+}
+
+label { 
+font-family: Montserrat;  
+font-size: 2vh; 
+line-height: 3em;
+text-transform: uppercase;
+color: black;
+transition: all .3s ease-in;
+opacity: 0;
+cursor: pointer;
+}
+
+.inner:before, .inner:after {
+position: absolute;
+content: '';
+height: 1px;
+width: inherit;
+background: #518f81;
+left: 0;
+transition: all .3s ease-in;
+}
+
+.inner:before {
+top: 50%; 
+transform: rotate(45deg);  
+}
+
+.inner:after {  
+bottom: 50%;
+transform: rotate(-45deg);  
+}
+
+.outer:hover label {
+opacity: 1;
+}
+
+.outer:hover .inner:before,
+.outer:hover .inner:after {
+transform: rotate(0);
+}
+
+.outer:hover .inner:before {
+top: 0;
+}
+
+.outer:hover .inner:after {
+bottom: 0;
+}
+
+      /* CONTACT
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    
   #contact-me {
     background: #E8F1EC;
     padding-top: 0.1vh;
@@ -263,149 +521,8 @@ body {
     height: 15%;
   }
 
-  /* || BUTTON */
-  button{
-    border: none;
-    background: none;
-    outline:none;
-    margin-left: 15%;
-    margin-right: 25%;
-  }
-
-
-  button:hover {
-    transform: scale(1.1);
-  }
-  
-
-  /* || POPUP */ 
-  .popup1 {
-    background: rgba(100, 100, 100, 0.8);
-    position: fixed;
-    display: none;
-    z-index: 1000;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-  .popup2 {
-    background: rgba(100, 100, 100, 0.8);
-    position: fixed;
-    display: none;
-    z-index: 1000;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-
-  .popup3 {
-    background: rgba(100, 100, 100, 0.8);
-    position: fixed;
-    display: none;
-    z-index: 1000;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-
-  #popup-window {
-    position: fixed;
-    padding: 2%;
-    background: #FFFFFF;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px 0px rgba(#000000, 0.4);
-    width: auto;
-    height: auto;
-    left: 5%;
-    right: 5%;
-    top: 7%;
-  }
-
-  #popup-window p {
-    font-size: 2.4vh;
-    display: inline;
-  }
-
-  #popup-window a {
-    font-family: Montserrat;
-    font-size: 2.4vh;
-    color: #518f81;
-    text-decoration: none;
-
-  }
-
-  #popup-window video {
-    margin-left: 10%;
-  }
-
-/* || POPUP BUTTON */ 
-  .outer {
-  position: absolute;
-  top: 3%;
-  right: 3%;
-  margin: auto;
-  width: 8vh;
-  cursor: pointer;
-  }
-
-  .inner {
-  width: inherit;
-  text-align: center;
-  }
-
-  label { 
-  font-family: Montserrat;  
-  font-size: 2vh; 
-  line-height: 3em;
-  text-transform: uppercase;
-  color: black;
-  transition: all .3s ease-in;
-  opacity: 0;
-  cursor: pointer;
-  }
-
-  .inner:before, .inner:after {
-  position: absolute;
-  content: '';
-  height: 1px;
-  width: inherit;
-  background: #518f81;
-  left: 0;
-  transition: all .3s ease-in;
-  }
-
-  .inner:before {
-  top: 50%; 
-  transform: rotate(45deg);  
-  }
-
-  .inner:after {  
-  bottom: 50%;
-  transform: rotate(-45deg);  
-  }
-
-  .outer:hover label {
-  opacity: 1;
-  }
-
-  .outer:hover .inner:before,
-  .outer:hover .inner:after {
-  transform: rotate(0);
-  }
-
-  .outer:hover .inner:before {
-  top: 0;
-  }
-
-  .outer:hover .inner:after {
-  bottom: 0;
-  }
-
-
- /* || RESPONSIVE */ 
+      /* RESPONSIVE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
   @media only screen and (max-width: 700px) {
     /* For tablets: */
@@ -465,14 +582,6 @@ body {
       text-align: justify;
       font-size: 2.92vh;
     }
-
-    #popup-window {
-      width: 60%;
-      height: auto;
-      margin-left: 15%;
-      margin-top: -1.5%;
-    }
-
   }
 
 

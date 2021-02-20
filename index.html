@@ -13,38 +13,40 @@
 <body id="body">
     <div class="topnav">
         <a class="menu-item-1 col-s-4 col-2" href="#welcome">About me</a>
-        <a class="menu-item-2 col-s-5 col-3" href="#previous" class="menu-item-2">Previous work</a>
+        <a class="menu-item-2 col-s-5 col-3" href="#previous">Previous work</a>
         <a class="menu-item-3 col-s-3 col-2" href="#contact">Contact</a>
     </div>
 
     <div class="content">
         <div class="about">
             <div id="welcome">
-            <div class="row">
-                <div class="col-6 col-s-12">
-                    <img id="hello_image" src="startsida.png">
+                <div class="row">
+                    <div class="col-6 col-s-12">
+                        <img id="hello_image" src="Images/startsida.png">
+                    </div>
+                    <div class="col-6 col-s-12">
+                        <p id="about_text">Master student in Interactive Media Technology
+                            at KTH Royal Insitute of Technology.</p>
+                    </div>
                 </div>
-                <div class="col-6 col-s-12">
-                    <p id="about_text">Master student in Interactive Media Technology
-                        at KTH Royal Insitute of Technology.</p>
-                </div>
-            </div>
             </div>
             <div id="about">
                 <div class="row">
                     <div class="col-s-12">
-                        <img id="portrait" src="portrait.jpg">
+                        <img id="portrait" src="Images/portrait.jpg">
                         <div id="img-wrapper">
                         </div>
                     </div>
 
                     <div class="col-s-12 col-6">
-                        <p id="more_info_text">Currently studying my final year of the Media Technology programme at KTH with a focus on interactive media technology.
-                            I am especially interested in the user experience and design of interactive and multimodal experiences. 
-                             </p>
+                        <p id="more_info_text">Currently studying my final year of the Media Technology programme at KTH
+                            with a focus on interactive media technology.
+                            I am especially interested in the user experience and design of interactive and multimodal
+                            experiences.
+                        </p>
                         <p id="scroll_down_text"><strong>Scroll down to see prevous work</strong></p>
                         <a href="#previous">
-                            <img id="arrow" src="arrow.png">
+                            <img id="arrow" src="Images/arrow.png">
                         </a>
                     </div>
                 </div>
@@ -54,56 +56,105 @@
         <div id="underfixed">
             <section id="previous">
                 <h1>Previous work</h1>
-                <div class="project1">
+
+                <div class="Eye">
                     <div class="row">
-                        <div class="col-5 col-s-10" id="left">
-                            <h2>Plant Baby</h2>
-                            <img src="plantbaby.png" width="60%" height="60%">
-                            <div class="description">Prototype for an application that helps you monitor and take care of your plants.</div>
-                            <button id="project1" class="grow">
-                                <img src="Button.png" width="30%" height="auto">
+                        <div class="col-6">
+                            <img class="fadeinleft" id="right-top-image" src="Images/Eye/Eye.png">
+                        </div>
+                        <div class="col-6">
+                            <img class="fadeinleft" id="right-middle-image" src="Images/Eye/eye5.jpg">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <img class="fadeinleft" id="right-bottom-image" src="Images/Eye/eye3.jpg">
+                        </div>
+                        <div class="col-6" id="right">
+                            <h2 class="fadeinleft">Eye in the Sky</h2>
+                            <h3 class="fadeinleft">3D Graphics | Interaction mechanics</h3>
+                            <p class="fadeinleft" id="description"> Multiplayer game that can be played on a desktop or tablet.
+                                Either play on the ground and collect all pineapples before the time runs out or
+                                play as the Eye in the Sky and stop the other players from completing ther mission!
+                            </p>
+
+                            <button class="fadeinleft" id="project1" class="grow">
+                                <img src="Images/Buttons/button1.png" width="30%" height="auto" id="right-button">
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="project2">
+                <div id="gradient-1">
+                </div>
+
+                <div class="Peace">
                     <div class="row">
-                        <div class="col-5 col-s-10" id="right">
-                            <h2>Thunderball</h2>
-                            <img src="thunderball.png" width="60%">
-                            <div class="description">A weather forecast visualization service created with the aim to help the energy sector with predictions about the weather.</div>
-                            <button id="project2">
-                                <img src="Button.png" width="30%" height="auto">
+                        <div class="col-6">
+                            <img class="fadeinleft" src="Images/Peace/peace3.png" id="left-top-image">
+                        </div>
+                        <div class="col-6">
+                            <img class="fadeinleft" src="Images/Peace/peace1.png" id="left-middle-image">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <h2 class="fadeinleft">Sharing Expertise of Women for Peace</h2>
+                            <h3 class="fadeinleft">UX Design</h3>
+                            <p class="fadeinleft" id="description"> A tool created to facilitate women’s participation in peace processes,
+                                 democratic processes and governance as well as 
+                                pre-negotiation and negotiation phases. Created as a project on futuring peace
+                                with the aim of making it simple to find knowledge within the area of peace negotiation. 
+                            </p>
+                            <button class="fadeinleft" id="project2" class="grow">
+                                <img src="Images/Buttons/button2.png" width="30%" height="auto" id="left-button">
                             </button>
+                        </div>
+                        <div class="col-6">
+                            <img class="fadeinleft" src="Images/Peace/peace2.png" id="left-bottom-image">
                         </div>
                     </div>
                 </div>
 
-                <div class="project3">
+                <div id="gradient-2">
+                </div>
+
+                <div class="Thunderball">
                     <div class="row">
-                        <div class="col-5 col-s-10" id="left">
-                            <h2>SolAR</h2>
-                            <img src="solar2.png" width="50%" height=10%>
-                            <div class="description">AR application created as a tool for teaching middle school children about the solar system.</div>
-                            <button id="project3">
-                                    <img src="Button.png" width="30%" height="auto">
+                        <div class="col-6">
+                            <video class="fadeinleft" autoplay muted loop>
+                                <source src="Videos/fog.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="col-6">
+                            <img class="fadeinleft" src="Images/Thunderball/thunderball2.png" id="right-middle-image">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <img class="fadeinleft" src="Images/Thunderball/thunderball.png" id="right-bottom-image">
+                        </div>
+
+                        <div class="col-6">
+                            <h2 class="fadeinleft" id="project-name-left">Thunderball</h2>
+                            <h3 class="fadeinleft" >UX Design | Programming </h3>
+                            <p class="fadeinleft" id="description">A weather forecast visualization application created with the aim to help
+                                the energy sector with predictions about the weather by visualizing information 
+                                about the temperature and wind speed from different weather models.
+                            </p>
+                            <button class="fadeinleft" id="project3" class="grow">
+                                <img src="Images/Buttons/button3.png" width="30%" height="auto" id="left-button">
+                            </button>
                         </div>
                     </div>
                 </div>
 
                 <div class="popup1">
                     <div id="popup-window">
-                        <h2>Plant Baby</h2>
-                        <p>Plant Baby is a concept and prototype created in the course Media Technology and Interaction Design. 
-                            The concept of Plant Baby includes sensors that measure plant's well-being and then informs the user of what needs to be done though an app. 
-                        </p>
-                            <p>More information can be seen in the video below and the design process can be found in 
-                                <a href="https://drive.google.com/file/d/1hzuTX9TKihgdmyxafN6-RswpQfahq9WG/view?usp=sharing">this workbook.</a>
-                            </p>
-                        <video width="80%" poster="plantbaby.png" controls>
-                            <source src="plantbaby.mov" type="video/mp4">
-                        </video>
+                        <h2>Eye in the Sky</h2>
+                        <iframe src="https://adelinaand.github.io/EyeInTheSky/">
+                        </iframe>
                         <div class="outer">
                             <div class="inner" name="close">
                                 <label>Close</label>
@@ -114,17 +165,20 @@
 
                 <div class="popup2">
                     <div id="popup-window">
-                        <h2>Project Thunderball</h2>
-                        <p>Project Thunderball is a project created in the course Information Visualization and was done in collaboration with Greenlytics and their weather forecast API.
-                            Thunderball allows the user to see temperature and wind speed at different times of the day, as predicted by different weather forecasts. Built with React, D3, and MapBox.
-                        </p>
-                           
-                        <p>More information can be found 
-                            <a href="https://moawinberg.github.io/thunderball-pages/"> on this website</a> and in the video below.</p>
-
-                        <video  poster="thunderball.png" width="80%" controls>
-                            <source src="thunderball.mp4">
-                        </video>
+                        <h2>Sharing Expertise of Women for Peace</h2>
+                        <p id="popup-text">
+                            Sharing Expertise of Women for Peace (SEWP) is a tool created to facilitate women’s 
+                            participation in peace processes, democratic processes and governance as well as 
+                            pre-negotiation and negotiation phases. It is a visualization tool for finding specific 
+                            knowledge in the places where it is needed, and broadening the group of people who are 
+                            invited into peace negotiation situations. The visualization includes organisations, 
+                            established activists, academics and researchers who work within peace effort, 
+                            and shows where in the world they can be found. The aim of SEWP is to make it simple
+                             to find knowledge within the area of peace negotiation and the subjects related to that.
+                            It is a tool that is intended to be used internally in the UN and is therefore designed 
+                            to fit in with the UN webpage to make it feel familiar and like a natural development of
+                            the already existing design. Explore the Figma prototype below. </p>
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FbXS8dSuOYanV3VbuT0TREc%2FWomen-in-Peace%3Fnode-id%3D23%253A246%26scaling%3Dcontain" allowfullscreen></iframe>
                         <div class="outer">
                             <div class="inner" name="close">
                                 <label>Close</label>
@@ -135,16 +189,9 @@
 
                 <div class="popup3">
                     <div id="popup-window">
-                        <h2>solAR</h2>
-                        <p>solAR is a project created in the course Multimodal interaction and interfaces. It is an application that features the solar system in augmented reality (AR)
-                             as well as an informational audio track for a complementary use of multiple output modalities. 
-                             The main aim of the project was to create a tool for teaching middle school children about the solar system. 
-                             The application was bult in Unity with Vuforia engine.</p>
-                            
-                            <p> More information can be seen in the video below. </p>
-                        <video width="80%" poster="solar2.png" controls>
-                            <source src="solAR.mov" type="video/mp4" >
-                        </video>
+                        <h2>Project Thunderball</h2>
+                        <iframe src="https://moawinberg.github.io/thunderball-pages/">
+                        </iframe>
                         <div class="outer">
                             <div class="inner" name="close">
                                 <label>Close</label>
@@ -152,7 +199,6 @@
                         </div>
                     </div>
                 </div>
-
             </section>
 
             <div id="contact-me">
@@ -160,7 +206,7 @@
                 <section id="contact">
                     <span>
                         <div class="icon">
-                            <img src="email.png">
+                            <img src="Images/Icons/email.png">
                             <p>
                                 adelina.andersen <br>
                                 @gmail.com
@@ -170,7 +216,7 @@
 
                     <span>
                         <div class="icon">
-                            <img src="telephone.png">
+                            <img src="Images/Icons/telephone.png">
                             <p>
                                 0761-65 68 62
                             </p>
@@ -180,12 +226,12 @@
                     <span>
                         <div class="icon">
                             <a href="https://www.linkedin.com/in/adelina-andersen-b80633128/">
-                                <img src="linkedin.png">
-                            
-                            <p>
-                                Adelina Andersen
-                            </p>
-                        </a>
+                                <img src="Images/Icons/linkedin.png">
+
+                                <p>
+                                    Adelina Andersen
+                                </p>
+                            </a>
                         </div>
                     </span>
                 </section>
