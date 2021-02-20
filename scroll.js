@@ -4,12 +4,18 @@ $(document).ready(function () { // Tells the function to wait to preform until e
 
     $(window).scroll(function() { 
 
+        $('.fadeinleft').each( function(i){
+                        var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+                        var bottom_of_window = $(window).scrollTop() + $(window).height();
+                        if( bottom_of_window + 50 > bottom_of_element ){
+                            $(this).animate({'opacity':'1'},2000);
+                        }
+                    });
+            
+
         var border = document.getElementById("img-wrapper");
 
         border.style.transform = "rotate("+window.pageYOffset/12+"deg)";
-        
-       /* var scroll = $(window).scrollTop();
-        $('.about, .slogan').css({'opacity':(( 180-scroll )/400)+0.4}); */
         
         var Top = $(window).scrollTop() + 1, // This variable finds the distance you have scrolled from the top.
                     SectionOneOffset = $('#welcome').offset().top, // This variable finds the distance between #section-one and the top. Replace #section-one with the ID of your section.
@@ -37,9 +43,13 @@ $(document).ready(function () { // Tells the function to wait to preform until e
                     $(".menu-item-2").removeClass("current-menu-item");
          } // Removes class of current-menu-item to the menu item with a class of menu-item-1
 
+
+/*
             var Bottom = $(window).scrollTop() + $(window).height();
             ProjectOneOffset = $('.project1').offset().top;
             ProjectTwoOffset = $('.project2').offset().top;
+
+                
 
             $('.project1').addClass("inactive_project");
             $('.project2').addClass("inactive_project");
@@ -57,9 +67,9 @@ $(document).ready(function () { // Tells the function to wait to preform until e
             if(Top > ProjectTwoOffset) {
                 $('.project3').removeClass("inactive_project");
                 $('.project2').addClass("inactive_project");
-                }
+                }*/
 
-        });
+        })
 
 
     });
